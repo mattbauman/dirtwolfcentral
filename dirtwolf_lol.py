@@ -12,7 +12,9 @@ champions_dict = json.loads(champions_request.text)
 
 summoners = {'Phenway','dynglefrytz','chaisea'}
 
-api_key = 'RGAPI-8569bd53-03ea-47e5-9777-164291a3f3ff'
+api_key = open('api_key.txt').read()
+print(api_key)
+
 headers = {'X-Riot-Token': api_key}
 
 for summoner in summoners:
