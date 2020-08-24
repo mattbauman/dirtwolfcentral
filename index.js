@@ -2,6 +2,9 @@ const app = require('express')();
 const https = require('https');
 const fs = require('fs');
 
+app.set('view engine', 'pug');
+app.set('views','./views');
+
 //GET home route
 app.get('/', (req, res) => {
     res.send('Welcome to Dirtwolf Central');
