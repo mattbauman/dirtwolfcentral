@@ -1,0 +1,14 @@
+{
+  "name": "dirtwolfcentral",
+  "version": "1.0.0",
+  "description": "Dirtwolf Central website",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
