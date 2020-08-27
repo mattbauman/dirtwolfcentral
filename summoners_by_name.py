@@ -3,7 +3,7 @@ import requests
 summoners = {'Phenway','dynglefrytz','chaisea'}
 summoners_url = 'https://na1.api.riotgames.com/lol/summoner/v4/summoners/by-name/'
 
-api_key = open('api_key.txt').read()
+api_key = open('riot_games_api_key.txt').read()
 headers = {'X-Riot-Token': api_key}
 
 for summoner in summoners:
