@@ -6,14 +6,19 @@ app.set('view engine', 'pug');
 app.set('views','./views');
 
 //GET home route
-app.get('/', (req, res) => {
-    res.send('Welcome to Dirtwolf Central');
+//app.get('/', (req, res) {
+//    res.send('Welcome to Dirtwolf Central');
+//});
+
+app.get('/', function(req, res){
+   res.render('index.pug');
 });
 
 var routes = require('./routes.js');
-
-//both index.js and routes.js should be in same directory
 app.use('/routes', routes);
+
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/my_db');
 
 // we will pass our 'app' to 'https' server
 https.createServer({
